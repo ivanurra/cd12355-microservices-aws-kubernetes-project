@@ -1,17 +1,15 @@
-# Use an official Python runtime as a parent image
-FROM python:3.12.0-slim
+FROM python:3.10-slim-buster
 
-# Set the working directory to /app
-WORKDIR /app
+USER root
 
-# Copy the current directory contents into the container at /app
-COPY ./analytics/. /app
+COPY ./requirements.txt requirements.txt
 
-# Install any needed packages specified in requirements.txt
+# Dependencies required for psycopg2 (used for Postgres client)
+RUN apt update -y && apt install -y build-essential libpq-dev
+
+# Dependencies are installed during build time in the container itself so we don't have OS mismatch
 RUN pip install -r requirements.txt
 
-# Make port 5153 available to the world outside this container
-EXPOSE 5153
+COPY . .
 
-# Run app.py when the container launches
-CMD ["python", "app.py"]
+CMD python analytics/app.py
