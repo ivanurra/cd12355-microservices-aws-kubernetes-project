@@ -100,6 +100,8 @@ The benefit here is that it's explicitly set. However, note that the `DB_PASSWOR
 * Generate report for check-ins grouped by users
 `curl <BASE_URL>/api/reports/user_visits`
 
+You can find the BASE_URL when you run python app.py
+
 ## Project Instructions
 1. Set up a Postgres database with a Helm Chart
 2. Create a `Dockerfile` for the Python application. Use a base image that is Python-based.
@@ -117,4 +119,4 @@ The benefit here is that it's explicitly set. However, note that the `DB_PASSWOR
 7. Screenshot of `kubectl describe deployment <SERVICE_NAME>`
 8. All Kubernetes config files used for deployment (ie YAML files)
 9. Screenshot of AWS CloudWatch logs for the application
-10. `README.md` file in your solution that serves as documentation for your user to detail how your deployment process works and how the user can deploy changes. The details should not simply rehash what you have done on a step by step basis. Instead, it should help an experienced software developer understand the technologies and tools in the build and deploy process as well as provide them insight into how they would release new builds.
+10. `README.md`
