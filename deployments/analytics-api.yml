@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: analytics-api
-        image: 599647319135.dkr.ecr.us-east-1.amazonaws.com/application:0.01
+        image: 599647319135.dkr.ecr.us-east-1.amazonaws.com/coworking-spaces:0.0.1
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
