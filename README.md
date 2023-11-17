@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-**Coworking Space Service**
+**Co-working Space Service**
 
-The Coworking Space Service consists of APIs enabling users to request one-time tokens and administrators to authorize access to a coworking space. Following a microservice pattern, the APIs are organized into distinct services deployable and manageable independently.
+The Co-working Space Service consists of APIs enabling users to request one-time tokens and administrators to authorize access to a coworking space. Following a microservice pattern, the APIs are organized into distinct services deployable and manageable independently.
 
 As a DevOps engineer in this project, you collaborate with a team constructing an API for business analysts. The provided application functions as expected, and your role involves building a pipeline to deploy it to Kubernetes.
 
@@ -12,21 +12,21 @@ As a DevOps engineer in this project, you collaborate with a team constructing a
 
 You'll need these tools to compete this project:
 
-- **Python Environment** - run Python 3.6+ applications and install Python dependencies via pip
-- **Docker CLI** - build and run Docker images locally
-- **kubectl** - run commands against a Kubernetes cluster
-- **helm** - apply Helm Charts to a Kubernetes cluster
-- **GitHub** - pull and clone code
+- **Python Environment** - run Python 3.6+ applications and install Python dependencies via pip.
+- **Docker CLI** - build and run Docker images locally.
+- **kubectl** - run commands against a Kubernetes cluster.
+- **helm** - apply Helm Charts to a Kubernetes cluster.
+- **GitHub** - pull and clone code.
 
 ## Remote Resource Requirements
 
 This project utilizes Amazon Web Services (AWS). The AWS resources you'll need to use for the project include:
 
 - **AWS CLI**
-- **AWS CodeBuild** - build Docker images remotely
-- **AWS ECR** - host Docker images
-- **Kubernetes Environment with AWS EKS** - run applications in k8s
-- **AWS CloudWatch** - monitor activity and logs in EKS
+- **AWS CodeBuild** - build Docker images remotely.
+- **AWS ECR** - host Docker images.
+- **Kubernetes Environment with AWS EKS** - run applications in k8s.
+- **AWS CloudWatch** - monitor activity and logs in EKS.
 
 ## How to run 🚀
 
@@ -50,7 +50,7 @@ This project utilizes Amazon Web Services (AWS). The AWS resources you'll need t
 
 #### 1. AWS CodeBuild Pipeline Activation:
 
-The deployment process starts with the execution of the `buildspec.yml` file in AWS CodeBuild. This step involves processing and packaging the application. Replace all environment variables with your own.
+The deployment process starts with the execution of the `buildspec.yml` file in AWS CodeBuild. This step involves processing and packaging the application. Replace all **environment variables** with your own.
 
 #### 2. Docker Image Repository:
 
