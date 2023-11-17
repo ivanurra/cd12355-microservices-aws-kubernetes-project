@@ -29,9 +29,9 @@ This project utilizes Amazon Web Services (AWS). The AWS resources you'll need t
 - Kubernetes Environment with AWS EKS - run applications in k8s
 - AWS CloudWatch - monitor activity and logs in EKS
 
-### How to run 🚀
+## How to run 🚀
 
-#### Initial Steps
+### Initial Steps
 
 1. Clone Project Code:
 
